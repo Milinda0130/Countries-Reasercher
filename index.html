@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Researcher</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+  body{
+
+background-image: url(/world.jpg.webp);
+
+}
+
+    .card {
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-title {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .card-body {
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+        padding: 10px 20px;
+        font-size: 1rem;
+        border-radius: 10px;
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #0056b3;
+    }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            color: #333;
+        }
+
+        header {
+            margin-bottom: 30px;
+        }
+
+        .navbar {
+            background: rgba(0, 0, 0, 0.8) !important;
+        }
+
+        .navbar-toggler {
+            border-color: #fff;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            color: #f4f4f4 !important;
+            font-weight: bold;
+        }
+
+        .search-bar {
+            margin: 20px auto;
+            max-width: 600px;
+            display: flex;
+            align-items: center;
+            background: #fff;
+            border-radius: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .search-bar input {
+            border: none;
+            flex-grow: 1;
+            padding: 10px 15px;
+            outline: none;
+            font-size: 1rem;
+        }
+
+        .search-bar button {
+            background: #28a745;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 0;
+            transition: background 0.3s;
+        }
+
+        .search-bar button:hover {
+            background: #218838;
+        }
+
+        section {
+            text-align: center;
+            color: #fff;
+            padding: 50px 15px;
+        }
+
+        .album {
+            background: #f8f9fa;
+            padding: 30px 0;
+        }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            max-height: 180px;
+            object-fit: cover;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        .card-text {
+            color: #6c757d;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="collapse text-bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4>About</h4>
+                        <h6>Dive into a world of knowledge about countries from around the globe. Our platform provides detailed insights into geography, culture, history, and economic data. Whether you're a student, traveler, or researcher, explore and compare countries effortlessly. Begin your journey of discovery today!</h6>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <strong>All World In Here</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-bar">
+        <input type="search" placeholder="Search Your Country" aria-label="Search" id="country">
+        <button type="submit" onclick="Search()">Search</button>
+    </div>
+
+    <section>
+        <h1 class="fw-light">COUNTRY RESEARCHER</h1>
+        <p>Explore countries, their culture, history, and much more. Start your discovery now!</p>
+    </section>
+
+    <div class="album" id="countrydiv">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="row">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
